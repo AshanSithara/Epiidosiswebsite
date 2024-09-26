@@ -1,7 +1,0 @@
-{
-  "/our-blogs/[id]/page": "app/our-blogs/[id]/page.js",
-  "/resources-media-announcement/page": "app/resources-media-announcement/page.js",
-  "/page": "app/page.js",
-  "/about-us/page": "app/about-us/page.js",
-  "/our-blogs/page": "app/our-blogs/page.js"
-}
