@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+
+  /* * {
+    @apply border-border;
+    font-family: 'Montserrat', sans-serif;
+  } */
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .pixwidth {
+    width: 155px;
+    height: 50px;
+    font-size: 15px;
+}
+.borders{
+  border-width: 1px;
+  font-size: 14px;
+  font-weight: 600px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.gapm{
+  gap: 59px;
+}
+.textgray{
+  color: #6D758F;
+}
+
+.textc{
+  font-size: 14px;
+  font-weight: 600;
+  color: #6D758F;
+}
+
+.textsize{
+  font-size: 36px;
+  line-height: 48px;
+  color: #CB8511;
+}
+
+.textgold{
+color: #CB8511;
+font-size: 36px;
+font-weight: 800;
+}
+
+.textblack{
+  color: #201E1F ;
+  font-size: 18px;
+}
+
+.textblack{
+  color: #201E1F ;
+}
+
+.custom-shadow{
+  box-shadow: 0px 10px 20px rgba(186, 185, 185, 0.276), 0px -10px 20px rgba(186, 185, 185,0.276), 10px 0px 20px rgba(186, 185, 185,0.276), -10px 0px 20px rgba(186, 185, 185,0.276);
+  border: none;
+}
+
+.textdarkgray{
+  color: #56585C;
+}
+
+.bg-black{
+  background-color: #201E1F;
+}
+.criteria_bg{
+  background-color: #F6F6F6;
+}
+
+.icon-hover-left:hover img {
+  content: url('/home/icons/Hover-left.svg'); 
+}
+
+.icon-hover-right:hover img{
+  content: url('/home/icons/Hover-right.svg');
+}
+}
+/* Custom Scrollbar Styles */
+
+.custom-scrollbar-container {
+  padding-right: 20px; /* Adjust this value to move the scrollbar further to the right */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 7px; /* Increase width to make the scrollbar wider if needed */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #CEEDFF; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #095681; 
+}
+
+/* To increase the top margin of the container */
+.custom-scrollbar {
+  margin-top: 20px; /* Increase this value as needed */
+}
+
+
+
+/* Content Margin */
+.content-wrapper {
+  margin: 1rem; /* Adjust margin as needed */
+}
+
+/* CSS to hide the scrollbar */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+}
+
+
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.section-heading::before,
+.section-heading::after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: #d9a65d; /* Adjust the color as needed */
+  margin: 0 16px; /* Spacing between text and lines */
+}
+
+.section-heading span {
+  font-weight: bold;
+  color: #333; /* Adjust text color */
+  font-size: 1.25rem; /* Adjust font size */
+}
