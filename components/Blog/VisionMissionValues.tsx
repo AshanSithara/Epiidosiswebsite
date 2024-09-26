@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 interface BlogPost {
+  id: number;
   blog_id: number;
   name: { en: string }; // Assuming the blog title is in 'name.en'
   content: string;
@@ -83,7 +84,7 @@ const VisionMissionValues: React.FC = () => {
   <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between">
     
     {/* Card Overlay - left side */}
-    <div className="relative bg-black text-white px-6 sm:px-8 pt-12 sm:pt-16 rounded-lg sm:w-[50%] h-72 sm:h-72 md:h-96 shadow-lg">
+    <div className="relative bg-black text-white px-6 sm:px-8 pt-12 sm:pt-16  sm:w-[50%] h-72 sm:h-72 md:h-96 shadow-lg">
       <div className="mb-2 sm:mb-4">
         <span className="bg-[#56585C] px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm uppercase rounded-sm">
           {featuredBlog.category || "Category"}
@@ -100,26 +101,23 @@ const VisionMissionValues: React.FC = () => {
             className="w-6 h-6 sm:w-8 sm:h-8 rounded-full"
           />
           <div className="flex flex-col">
-            <p className="text-[#56585C] font-extrabold">{featuredBlog.author_name || "Author"}</p>
+            <p className="text-[#56585C] font-extrabold">{featuredBlog.author_name || "Epiidosis Finance Team"}</p>
             <p className="text-[#B4B9C9] text-[10px] sm:text-xs">
               {new Date(featuredBlog.create_date).toLocaleDateString()}
             </p>
           </div>
         </div>
 
-        <button className="p-1 sm:p-2 bg-[#56585C] rounded-sm">
-          <img
-            src={`/Blog/Arrow.svg`}
-            alt="Arrow"
-            className="w-4 h-4 sm:w-6 sm:h-6"
-          />
-        </button>
+       <a href={`/our-blogs/${featuredBlog.id}`} className="cursor-pointer">
+  <img src="/Blog/ButtonIcon.png" alt="Arrow" className="w-6 h-6" />
+</a>
+
       </div>
     </div>
 
     {/* Background Image - right side */}
     <div
-      className="relative bg-cover bg-center rounded-lg w-full sm:w-[50%] h-72 sm:h-72 md:h-96"
+      className="relative bg-cover bg-center  w-full sm:w-[50%] h-72 sm:h-72 md:h-96"
       style={{ backgroundImage: `url('${coverImageUrl || "/Blog/FrameBlog.svg"}')` }}
     >
       {/* Background image itself, no changes needed here */}

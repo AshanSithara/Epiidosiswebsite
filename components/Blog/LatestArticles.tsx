@@ -235,7 +235,7 @@ const LatestArticles: React.FC = () => {
                     </span>
             
                     {/* Blog Button Icon */}
-                    <a href={`/Blog/${blog.id}`} className="cursor-pointer">
+                    <a href={`/our-blogs/${blog.id}`} className="cursor-pointer">
                       <img src="/Blog/ButtonIcon.png" alt="Arrow" className="w-6 h-6" />
                     </a>
                   </div>

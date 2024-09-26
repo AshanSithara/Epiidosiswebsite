@@ -1,0 +1,65 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/our-blogs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/our-blogs/page.js"
+    ],
+    "/[...dpath]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[...dpath]/page.js"
+    ],
+    "/our-blogs/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/our-blogs/[id]/page.js"
+    ],
+    "/funding-solution/financial-instrument-investment/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/funding-solution/financial-instrument-investment/page.css",
+      "static/chunks/app/funding-solution/financial-instrument-investment/page.js"
+    ],
+    "/funding-solution/structured-investment/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/funding-solution/structured-investment/page.css",
+      "static/chunks/app/funding-solution/structured-investment/page.js"
+    ],
+    "/contact-us/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/contact-us/page.css",
+      "static/chunks/app/contact-us/page.js"
+    ],
+    "/Invest-with-us/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Invest-with-us/page.css",
+      "static/chunks/app/Invest-with-us/page.js"
+    ],
+    "/resources-media-announcement/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/resources-media-announcement/page.js"
+    ],
+    "/about-us/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about-us/page.js"
+    ]
+  }
+}
